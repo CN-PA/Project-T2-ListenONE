@@ -1,0 +1,65 @@
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    margin-top: 20px;
+}
+/* front and back */
+.fb {
+    width: 100px;
+    height: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+   
+}
+#f {
+    font-size: 25px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#b {
+    font-size: 25px;
+    font-weight: 800;
+}
+/* search */
+.sh { 
+    display: flex;
+    width: 250px;
+    height: 40px;
+    margin-left: 300px;
+    margin-right: 50px;
+    background-color: #f2f2f3;
+    border-radius: 10px;
+}
+#ss {
+    align-items: center;
+    font-size: 15px;
+    font-size: 800;
+    color: #b0b0b0;
+}
+#text {
+    border: 0px;
+    border-color: #f2f2f3;
+    background-color: #f2f2f3;
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+}
+#text ::placeholder{
+    color: #808080;
+}
+/* personal information */
+#pi {
+    font-size: 30px;
+    color: grey;
+    margin-right: 20px;
+}
+/* set up */
+#su {
+    font-size: 33px;
+    color: grey;
+}
