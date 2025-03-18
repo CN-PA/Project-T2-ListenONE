@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListenOne</title>
+    <link rel="stylesheet" href="../实习项目：实现一个音乐播放器——LISTENONE/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./page_template.css">
+    <link rel="stylesheet" href="./lyric.css">
+</head>
+<body>
+    <!-- header头部-->
+    <div class="header"> 
+        <!-- 前后键 -->
+        <div class="fb">
+            <span class="iconfont icon-houfan" id="f"></span>
+            <span class="iconfont icon-qianjinhoutui_r" id="b"></span>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="sh">
+            <span class="iconfont icon-sousuo" id="ss"></span>
+            <input type="text"  id="text" placeholder="搜索">
+        </div>
+        <!-- 用户界面 -->
+        <div class="iconfont icon-lunkuohua_yonghuxinxi" id="pi"></div>
+        <!-- 设置 -->
+        <div class="iconfont icon-shezhi" id="su"></div>
+    </div>
+    <!-- body 中间部分 -->
+    <div class="body">
+        <!-- 左侧信息栏 -->
+        <div class="leftlist">
+            <div class="listenone">LISTENONE</div>
+            <ul>
+            <li>平台聚合</li>
+            <li id="cp">
+                <div class="iconfont icon-xingxing" id="star"></div>
+                <div class="songlist">精选歌单</div>
+            </li>
+            <li id="pc">
+                <div>创建的歌单</div>
+                <div class="iconfont icon-jiahaozhankai" id="jia"></div> 
+            </li>
+            <li>收藏的歌单</li>
+           </ul> 
+            
+        </div>
+        <!-- 音乐源切换 -->
+        <div class="right">
+            <div class="change">
+                <ul>
+                    <li data-source="qq" class="music">QQ音乐</li>
+                    <li>|</li>
+                    <li data-source="kugou" class="music">酷狗音乐</li>
+                    <li>|</li>
+                    <li data-source="kuwo" class="music">酷我音乐</li>
+                    <li>|</li>
+                    <li data-source="bilibili" class="music">哔哩哔哩</li>
+                    <li>|</li>
+                    <li data-source="migu" class="music">咪咕音乐</li>
+                    <li>|</li>
+                    <li data-source="qianqian" class="music">千千音乐</li>
+                </ul>
+            </div>
+            <!-- 风格变换 -->
+            <div class="switch">
+                <ul>
+                    <li>全部</li>
+                    <li>排行榜</li>
+                    <li>流行</li>
+                    <li>轻音乐</li>
+                    <li>摇滚</li>
+                    <li>民谣</li>
+                    <li>R&B</li>
+                    <li>嘻哈</li>
+                    <li>电子</li>
+                    <li>古典</li>
+                    <li class="iconfont icon-shenglvehao" id="shenglue"></li>
+                </ul>
+            </div>
+            <!-- 不同风格的音乐图片实例 -->
+            <div class="me">
+                <span class="picture"><img src="./Music_Example/微信图片_20250313102905.jpg" alt="治愈华流，未经世俗的小美满" ></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103016.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103021.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103026.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103030.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103033.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103037.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103042.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103042.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103046.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103051.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103058.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103102.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103108.jpg" alt="" class="picture"></span>
+                <span class="picture"><img src="./Music_Example/微信图片_20250313103111.jpg" alt="" class="picture"></span>
+            </div>
+        </div>
+    </div>
+    <!-- bottom底部部分 -->
+    <div class="bottom">
+        <div class="iconfont icon-a-yinlebofangliebiaoyinle" id="list"></div>
+        <div class="vm">|</div>
+        <div class="song">
+            <div class="name">关键词</div>
+            <div class="singer">坠-坠</div>
+        </div>
+        <div class="iconfont icon-shangyishoushangyige" id="ls"></div>
+        <div class="si">
+            <img src="./Music_Example/微信图片_20250313123247.jpg" alt="">
+            <div class="st">0.00/0.00</div>
+        </div>
+        <div class="iconfont icon-xiayigexiayishou" id="rs"></div>
+        <div class="iconfont icon-jiahao" id="plus"></div>
+        <div class="iconfont icon-shunxubofang" id="pm"></div>
+        <div class="iconfont icon-xiangshangjiantou" id="lyric" data-page="lyric"></div>
+    </div>
+    <div id="lyricpage" class="hidden">
+        <div class="background">
+            <div class="iconfont icon-xiangxiajiantou" id="left"></div>
+            <div class="sl">
+                <div class="pic"><img src="./Music_Example/微信图片_20250313123247.jpg" alt="" id="songs"></div>
+                <div class="names">关键词</div>
+                <div class="singers">坠-坠</div>
+                <div class="player">
+                    <div class="iconfont icon-shangyishoushangyige" id="lefts"></div>
+                    <div class="songinformation">
+                        <img src="./Music_Example/微信图片_20250313123247.jpg" alt="">
+                        <div class="songtime">0.00/0.00</div>
+                    </div>
+                    <div class="iconfont icon-xiayigexiayishou" id="rights"></div>
+                </div>
+            </div>
+            <!-- lyric -->
+            <div class="lyrics">
+                <ul class="lyriclist">
+    
+                </ul>
+            </div>
+            <ul id="playmodel">
+                <li class="iconfont icon-jiahao"></li>
+                <li class="iconfont icon-suijibofang"></li>
+                <li class="iconfont icon-geci"></li>
+                <li class="iconfont icon-xiangxiajiantou" id="rightside"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./music_platform_change.js"></script>
+</body>
+</html>
